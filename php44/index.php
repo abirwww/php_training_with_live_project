@@ -33,6 +33,30 @@
     <section class="maincontent">
     <?php
 
+        $myster = "We are learning PHP";
+        $str = explode(" ", $myster);
+        echo $str[0];
+
+        print_r(explode(" ", $myster));
+
+        $fruits = "apple,banana,mango,grape";
+        print_r(explode(",", $fruits));
+
+        $date = "2025-05-08";
+        print_r(explode("-", $date));
+
+        $sentence = "PHP is very easy to learn";
+        $words = explode(" ", $sentence);
+        echo "Total words:".count($words);
+
+        $quote = "Knoledge is power";
+        $words = explode(" ", $quote);
+        echo $words[2];
+
+        $mystr = array("we", "are", "learning", "PHP");
+        echo implode(" ", $mystr);
+        
+
 
 
 
