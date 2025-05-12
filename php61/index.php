@@ -35,9 +35,13 @@
     <section class="maincontent">
     <?php
     function myfunction($value){
-        return ($value + $value);
+        $v = strtoupper($value);
+        return $v;
     }
-    $arr = array(1,2,3,4,5);
+    $arr = array(
+     "Animal"    => "cow",
+     "Type"      => "mamal"
+    );
 
     $result = array_map("myfunction", $arr);
 
