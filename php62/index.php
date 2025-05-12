@@ -34,16 +34,17 @@
 
     <section class="maincontent">
     <?php
-    function myfunction($value){
-        $v = strtoupper($value);
-        return $v;
-    }
-    $arr = array(
-     "Animal"    => "cow",
-     "Type"      => "mamal";
-    );
 
-    $result = array_map("myfunction", $arr);
+        $arr_one = array(
+            "a" => "red",
+            "b" => "green"
+        );
+        $arr_two = array(
+            "c" => "blue",
+            "b" => "yellow"
+        );
+
+   $result = array_merge($arr_one, $arr_two);
 
     print("<pre>");
     print_r($result);
