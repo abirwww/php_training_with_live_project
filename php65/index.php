@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Array Functions Bangla Tutorial Part-17 (array_pad)</title>
+    <title>PHP Array Functions Bangla Tutorial Part-18 (array_pop & array_push)</title>
     <style>
         .phpcoding{
             width: 900px;
@@ -27,18 +27,20 @@
 <section class="phpcoding">
     <div class="headeroption">
         <h2>
-      PHP Array Functions Bangla Tutorial Part-17 (array_pad)</h2>
+      PHP Array Functions Bangla Tutorial Part-18 (array_pop & array_push)</h2>
     </div>
 
     <section class="maincontent">
     <?php
     
         $arr = array("red", "green");
-        $result = array_pad($arr, 8, "blue");
+        // array_push($arr, "pink");
+        array_pop($arr);
+
         
         
     print("<pre>");
-    print_r($result);
+    print_r($arr);
     print("</pre>");
 
     ?>
